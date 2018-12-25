@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  a.foo_link(href='/') home
+  a.foo_link(href='/about') about us
+  a.foo_link(href='/contacts') contacts
+  br
+  br
+  p please enter following data:
+  input#name(type='text' placeholder='your name')
+  br
+  input#number(type='text' placeholder='your phone number')
+  br
+  input#email(type='text' placeholder='your email')
+

@@ -7,10 +7,13 @@ block content
   a.foo_link(href='/contacts') contacts
   br
   br
-  p please enter following data:
-  input#name(type='text' placeholder='your name')
-  br
-  input#number(type='text' placeholder='your phone number')
-  br
-  input#email(type='text' placeholder='your email')
+  form(method="post")
+    p please enter following data:
+    input(type='text' name="name" placeholder='your name')
+    br
+    input(type='text' name="number" placeholder='your phone number')
+    br
+    input(type='text' name="email" placeholder='your email')
+    br
+    button(type="submit") send data
 
